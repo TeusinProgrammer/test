@@ -1,4 +1,4 @@
-package entities;
+ package entities;
 
 public class Tirangle {
     public double a;
@@ -6,6 +6,11 @@ public class Tirangle {
     public double c;
     
     public double area(){
+        double p = (a + b + c)/2;
+        double result = Math.sqrt(p * (p - a) * (p - b) * (p - c));
+        return result ;
+    }
+    public double area2(){
         double p = (a + b + c)/2;
         double result = Math.sqrt(p * (p - a) * (p - b) * (p - c));
         return result + 2;
